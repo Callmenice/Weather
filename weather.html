@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Что с погодой</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="weather.js"></script>
+</head>
+<body>
+    <div>
+        <select id="choose-city" name="city">
+            <option disabled selected>Выберите город</option>
+            <option value="London,uk">Лондон</option>
+            <option value="Venezia,it">Венеция</option>
+            <option value="Moscow,ru">Москва</option>    
+        </select>
+    </div>
+    <div>
+        <div id="show-weather" style="display: none">
+            <p style="font-weight: bold">Погода на данный момент</p>
+            <p>Температура: <span id="temp-value"></span> &#176;</p>
+            <p>Влажность: <span id="humidity-value"></span> %</p>
+            <p>Давление: <span id="pressure-value"></span> мм рт. ст.</p>
+        </div>
+    </div>
+</body>
+</html>
